@@ -1,0 +1,14 @@
+name = "autotravel-mongolia"
+compatibility_date = "2024-09-23"
+pages_build_output_dir = "public"
+
+# D1 데이터베이스 바인딩
+# ⚠️ 새 Cloudflare 계정에서 D1을 생성한 뒤 database_id를 실제 값으로 교체하세요.
+#    (Workers & Pages → D1 → Create database → 생성된 id 복사)
+[[d1_databases]]
+binding = "DB"
+database_name = "autotravel-db"
+database_id = "REPLACE_WITH_NEW_D1_ID"
+
+# 비밀값(관리자 토큰)은 여기 두지 말 것. Pages 프로젝트 Settings → Variables and Secrets 에
+# ADMIN_TOKEN 을 추가하세요. (/api/migrate, /seed, /prices, /quotes(GET) 보호에 사용)

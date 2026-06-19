@@ -1,0 +1,10 @@
+node_modules/
+.wrangler/
+.dev.vars
+*.log
+.DS_Store
+
+# ⚠️ 가격·원가 시드 데이터는 절대 커밋 금지 — 배포 후 /api/coc-pricing/seed 로만 주입
+coc_prices.json
+coc_costs.json
+*.seed.json
